@@ -1,4 +1,168 @@
-# CS529-Neural Network 
+🎵 Music Genre Classification using Machine Learning
+📌 Project Overview
+
+This project focuses on predicting the genre of music from raw audio files using classical machine learning techniques. The goal was to explore the full ML pipeline, starting from audio feature extraction to model training, evaluation, and comparative analysis of different algorithms.
+
+The project emphasizes understanding model behavior, feature engineering, and interpretability rather than treating models as black boxes.
+
+🧠 Problem Statement
+
+Given a dataset of audio music files, predict the genre of each track by extracting meaningful features and training machine learning models capable of learning discriminative patterns from audio signals.
+
+🔄 Pipeline Overview
+Audio Files → Feature Extraction → Preprocessing → Dimensionality Reduction
+            → Model Training → Evaluation → Visualization & Analysis
+
+🎼 Feature Extraction
+
+Raw audio signals were transformed into structured numerical representations using signal-processing techniques.
+
+Converted audio files into spectrogram-based features
+
+Extracted time–frequency domain characteristics suitable for ML models
+
+Ensured consistent sampling and feature dimensionality across files
+
+This step bridges the gap between raw audio and classical ML models.
+
+⚙️ Data Preprocessing
+
+To improve model performance and stability:
+
+Standardization was applied to normalize feature distributions
+
+Principal Component Analysis (PCA) was used to:
+
+Reduce dimensionality
+
+Remove feature redundancy
+
+Improve computational efficiency
+
+Dataset was split into training and testing sets to ensure unbiased evaluation
+
+🧪 Models Implemented
+🔹 Logistic Regression (From Scratch & scikit-learn)
+
+Implemented Logistic Regression from scratch using NumPy
+
+Compared results with scikit-learn implementation
+
+Trained on reduced PCA feature space
+
+Served as a baseline linear model
+
+🔹 Random Forest Classifier
+
+Captured non-linear relationships between features
+
+Analyzed feature interactions and ensemble behavior
+
+🔹 Gaussian Naive Bayes
+
+Evaluated probabilistic assumptions on audio features
+
+Used as a lightweight baseline for comparison
+
+🔹 Support Vector Machine (SVM)
+
+Tested margin-based classification on transformed feature space
+
+Compared kernel behavior and generalization performance
+
+📊 Model Evaluation
+
+Models were evaluated using multiple performance metrics to ensure robust analysis:
+
+Accuracy
+
+Precision
+
+Recall
+
+F1-score
+
+Confusion Matrix for class-wise performance analysis
+
+This multi-metric approach helped identify strengths and weaknesses across genres.
+
+📈 Visualization & Analysis
+
+To better understand data and model behavior:
+
+Loss curves to analyze convergence during training
+
+Heatmaps for correlation and confusion matrix visualization
+
+t-SNE visualization to observe class separability in reduced feature space
+
+Comparative analysis of model decision boundaries and performance trends
+
+🔍 Key Insights
+
+Feature preprocessing and dimensionality reduction significantly impact model performance
+
+Linear models benefit from PCA, while ensemble methods handle raw feature interactions better
+
+Different models exhibit distinct bias–variance tradeoffs on audio data
+
+Visualization tools (t-SNE, heatmaps) provide valuable interpretability beyond metrics
+
+🛠️ Tech Stack
+
+Python
+
+NumPy
+
+scikit-learn
+
+Matplotlib / Seaborn
+
+Librosa (audio processing)
+
+📁 Repository Structure
+├── data/
+│   ├── raw_audio/
+│   └── processed_features/
+├── feature_extraction/
+├── models/
+│   ├── logistic_regression_from_scratch.py
+│   ├── random_forest.py
+│   ├── svm.py
+│   └── naive_bayes.py
+├── evaluation/
+├── visualization/
+├── notebooks/
+├── utils/
+└── README.md
+
+🚀 How to Run
+
+Clone the repository
+
+git clone https://github.com/your-username/music-genre-classification.git
+cd music-genre-classification
+
+
+Install dependencies
+
+pip install -r requirements.txt
+
+
+Run feature extraction
+
+Train and evaluate models using provided scripts or notebooks
+
+📌 Future Work
+
+Extend to deep learning–based models (CNNs on spectrograms)
+
+Explore advanced audio features (MFCC deltas, chroma features)
+
+Perform hyperparameter tuning and cross-validation
+
+Compare classical ML vs deep learning performance
+
 ### Repo Structure
 The repository is organized into 6 main folders:
 * checkpoints - Contains current best model from NN and Transfer learning.
