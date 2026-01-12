@@ -96,8 +96,8 @@ These visualizations helped interpret model decision boundaries and data structu
 -   Seaborn
 
 📁 Repository Structure
+------------------------
 ### Running Code
-
 There exist 3 different options for running this program, which are all detailed below.
 Common Steps
 
