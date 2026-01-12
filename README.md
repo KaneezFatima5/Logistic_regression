@@ -20,7 +20,7 @@ Model Training (from scratch & sklearn)
 Evaluation & Visualization
 
 ### 1\. Feature Extraction
------------------------
+
 Audio files were converted into structured numerical representations using:
 
 -   MFCCs (Mel-Frequency Cepstral Coefficients)
@@ -33,8 +33,8 @@ Audio files were converted into structured numerical representations using:
 These features capture both frequency and temporal characteristics of music.
 
 ### 2\. Models Implemented
+
 🔹 Logistic Regression (From Scratch)
--------------------------------------
 Implemented using NumPy
 
 -   Loss computation
@@ -97,7 +97,16 @@ These visualizations helped interpret model decision boundaries and data structu
 
 📁 Repository Structure
 ------------------------
+The repository is organized into 6 main folders:
+
+checkpoints - Contains current best model from NN and Transfer learning.
+data - Contains all the datasets and submission data.
+models - Contains the current best model, and is where trained models are stored using pickle.
+report - Contains the tex files for the report.
+src - Contains source files for the project, also contains config.py.
+tests - Contains unit tests for various parts of code in src.
 ### Running Code
+
 There exist 3 different options for running this program, which are all detailed below.
 Common Steps
 
